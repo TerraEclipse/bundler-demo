@@ -1,0 +1,6 @@
+{
+  "vendors": [
+    "react",
+    "react-dom"
+  ]
+}
