@@ -1,5 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './components/App'
+import bundler from './bundler/bundler'
+import bundle from './bundle'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const conf = {
+  rootId: 'root'
+}
+
+const app = bundler(bundle, conf)
+
+let RootComponent = app.get('components', 'App')
+let render = app.get('utils', 'render')
+
+render(RootComponent)
