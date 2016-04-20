@@ -3,5 +3,6 @@ import counterBundle from './bundles/counter/bundle'
 import appBundle from './bundles/app/bundle'
 
 export default {
-  bundles: [coreBundle, counterBundle, appBundle]
+  _includes: [coreBundle, counterBundle, appBundle],
+  'conf/core/utils/render/rootId': 'my-root'
 }

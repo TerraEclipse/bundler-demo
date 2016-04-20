@@ -1,7 +1,6 @@
 import render from './render'
 
 export default {
-  utils: {
-    render
-  }
+  'conf/core/utils/render/rootId': 'root',
+  'core/utils/render': render
 }

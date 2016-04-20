@@ -1,7 +1,5 @@
 import Counter from './components/Counter'
 
 export default {
-  components: {
-    'Counter': Counter
-  }
+  'features/counter/components/Counter': Counter
 }

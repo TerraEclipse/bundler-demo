@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 export default function container (app) {
 
-  let colors = app.get('colors')
-  let Counter = app.get('components', 'Counter')
+  let colors = app.colors
+  let Counter = app.features.counter.components.Counter
 
   class App extends Component {
     render () {
