@@ -1,4 +1,4 @@
-import bundler from './bundler/bundler'
+import bundler from '@terraeclipse/bundler'
 import bundle from './bundle'
 
 const app = bundler(bundle)
