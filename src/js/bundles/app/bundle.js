@@ -2,6 +2,9 @@ import niceColors from './colors/nice'
 import App from './components/App'
 
 export default {
+  _ns: 'app',
   _bundles: [niceColors],
-  'app.components.App': App
+  'components.App': App,
+  'components.Counter': '#react-counter:components.Counter',
+  'colors': '#colors:colors'
 }

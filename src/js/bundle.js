@@ -1,16 +1,14 @@
-import coreBundle from './bundles/core/bundle'
-import counterBundle from './bundles/counter/bundle'
+import renderBundle from './bundles/react-render/bundle'
+import counterBundle from './bundles/react-counter/bundle'
 import appBundle from './bundles/app/bundle'
-
-// [weight] = add to sorted array
-// {weight} = merge to object
-// @[weight] = map result
 
 export default {
   '_bundles': [
     appBundle,
     counterBundle,
-    coreBundle
+    renderBundle
   ],
-  '@core.conf.rootId': 'my-root'
+  '@react-render:conf.rootId': 'my-root',
+  'utils.render': '#react-render:utils.render',
+  'components.App': '#app:components.App'
 }

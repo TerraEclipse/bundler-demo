@@ -1,5 +1,6 @@
 import Counter from './components/Counter'
 
 export default {
-  'counter.components.Counter': Counter
+  _ns: 'react-counter',
+  'components.Counter': Counter
 }
